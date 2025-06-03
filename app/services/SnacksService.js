@@ -2,8 +2,8 @@ import { AppState } from "../AppState.js";
 
 class SnacksService {
 
-  addQuarter() {
-    AppState.money += .25
+  addMoney(amount) {
+    AppState.money += amount
   }
 
   buySnack(snackName) {

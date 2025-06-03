@@ -18,8 +18,8 @@ export class SnacksController {
     snacksCaseElem.innerHTML = snacksCase
   }
 
-  addQuarter() {
-    snacksService.addQuarter()
+  addMoney(amount) {
+    snacksService.addMoney(amount)
     console.log(AppState.money);
   }
 

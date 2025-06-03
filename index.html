@@ -39,8 +39,20 @@
     </div>
     <div>
       <span class="d-block">$<b id="money-total">0.00</b></span>
-      <button onclick="app.snacksController.addQuarter()">
+      <button onclick="app.snacksController.addMoney(.25)">
         add 0.25$
+      </button>
+      <button onclick="app.snacksController.addMoney(.5)">
+        add .50$
+      </button>
+      <button onclick="app.snacksController.addMoney(.75)">
+        add .75$
+      </button>
+      <button onclick="app.snacksController.addMoney(1)">
+        add $1.00
+      </button>
+      <button onclick="app.snacksController.addMoney(5)">
+        add $5.00
       </button>
     </div>
     <div class="container">
