@@ -6,6 +6,7 @@ export class SnacksController {
     console.log('snacks ready');
     this.drawSnacks()
     AppState.on('money', this.drawMoneys)
+    AppState.on('money', this.drawSnacks)
   }
 
   drawSnacks() {

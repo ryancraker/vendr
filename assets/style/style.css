@@ -34,3 +34,9 @@ main {
   justify-content: start;
   align-items: end;
 }
+
+.disabled {
+  filter: saturate(.2) brightness(1.2) contrast(.7);
+  pointer-events: none;
+  /* disables click events and hovering*/
+}
