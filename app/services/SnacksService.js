@@ -11,6 +11,10 @@ class SnacksService {
     if (AppState.money < snackToBuy.price) {
       return
     }
+    if (snackToBuy.quantity <= 0) {
+      return
+    }
+    snackToBuy.quantity--
     AppState.money -= snackToBuy.price
     console.log(snackName + ' purchased');
     AppState.myCart.push(snackToBuy)
