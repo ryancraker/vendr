@@ -1,0 +1,36 @@
+/* BASIC STYLES HERE */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  padding: 1rem;
+}
+
+.food-image {
+  max-height: 100%;
+  max-width: 100%;
+  background-position: center;
+  background-image: cover;
+  transition: ease-in, 1s;
+}
+
+.snack-card {
+  border: thick double black;
+}
+
+.snack-card:hover .food-image {
+  transform: translateY(-1rem);
+  transition: ease-in-out, .5s;
+}
+
+#pop-toast-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+}
