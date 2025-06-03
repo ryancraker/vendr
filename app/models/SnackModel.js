@@ -20,4 +20,16 @@ export class Snack {
         </div>
         `
   }
+  get SnackCartTemplate() {
+    return `
+    <div onclick="app.snacksController.buySnack('${this.name}')" type="button" role="button" 
+    class="col-md-2 m-1 snack-card">
+          <img class="food-image" src="${this.imgUrl}" alt="picture of ${this.name}">
+          <hr>
+          <div class="d-flex justify-content-between">
+            <span>${this.name}</span>
+          </div>
+        </div>
+        `
+  }
 }

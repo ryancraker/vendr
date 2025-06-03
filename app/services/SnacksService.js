@@ -13,7 +13,7 @@ class SnacksService {
     }
     AppState.money -= snackToBuy.price
     console.log(snackName + ' purchased');
-
+    AppState.myCart.push(snackToBuy)
   }
 }
 

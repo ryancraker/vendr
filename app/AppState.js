@@ -27,6 +27,9 @@ class ObservableAppState extends EventEmitter {
   ]
 
   money = 0;
+
+  /** *@type {Snack[]} */
+  myCart = []
 }
 
 export const AppState = createObservableProxy(new ObservableAppState())

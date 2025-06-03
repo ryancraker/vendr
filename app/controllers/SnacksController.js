@@ -7,6 +7,7 @@ export class SnacksController {
     this.drawSnacks()
     AppState.on('money', this.drawMoneys)
     AppState.on('money', this.drawSnacks)
+    AppState.on('myCart', this.drawMyCart)
   }
 
   drawSnacks() {
@@ -30,6 +31,15 @@ export class SnacksController {
   buySnack(snackName) {
     console.log('buying ' + snackName);
     snacksService.buySnack(snackName)
+  }
+
+  drawMyCart() {
+    const mySnacks = AppState.myCart
+    const myCartElem = document.getElementById('my-cart')
+    let myCart = ''
+    mySnacks.forEach(cartItem => myCart += cartItem.SnackCartTemplate)
+    myCartElem.innerHTML = myCart
+    console.log(myCart);
 
   }
 }
